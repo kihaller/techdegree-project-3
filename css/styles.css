@@ -1,0 +1,249 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+*,
+*:before,
+*:after {
+  /*Firefox*/
+  -moz-box-sizing: border-box;
+  /*Safari, Chrome */
+  -webkit-box-sizing: border-box;
+  /*ie, opera*/
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Playfair+Display', serif;
+  color: #4f565e;
+  background-color: #f8f8ff;
+}
+
+
+form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+fieldset {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  padding: 0;
+  border-style: none;
+}
+
+label {
+  margin-top: 8px;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+h1 {
+  background-color: #2d3945;
+  color: white;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  font-size: 25px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  color: #a7aba8;
+  font-style: italic;
+  padding-bottom: 150px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street"],
+input[type="city"],
+input[type="zip"],
+textarea,
+select {
+  border-radius: 5px;
+  background: #eff0f1;
+  border: 2px #eff0f1 solid;
+  text-align: right;
+  font-size: 16px;
+  height: auto;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  transition: background-color 0.5s ease;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+header>*:not(h1),
+main,
+footer {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="street"]:focus,
+input[type="city"]:focus,
+input[type="zip"]:focus,
+select:focus,
+textarea:focus {
+  border: 2px #2d3945 solid;
+  outline: none;
+  background: #b0c4de;
+  transition: background-color 0.5s ease;
+}
+
+textarea {
+  resize: none;
+  height: 7em;
+}
+
+
+::placeholder {
+  color: #a7aba8;
+  font-style: italic;
+}
+
+input[type="radio"] {
+  margin: 0 7px 15px 0;
+}
+
+input[type="checkbox"] {
+  margin: 0 10px 15px 0;
+
+}
+
+
+input[type="checkbox"]:checked+label {
+  font-weight: bold;
+}
+
+input[type="radio"]:checked+label {
+  font-weight: bold;
+}
+
+
+
+#contact {
+  border-bottom: 3px solid #2d3945;
+  margin-bottom: 20px;
+}
+
+.newsletter-preference {
+  margin-top: 1em;
+}
+
+.newsletter-preference p {
+  margin-bottom: .5em;
+}
+
+#zip-code {
+  width: 50%;
+}
+
+
+.main-header {
+  text-align: center;
+
+}
+
+.main-header p {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form {
+  font-size: 1em;
+}
+
+p,
+form label {
+  color: #7e7e7e;
+}
+
+
+header::after {
+  content: "";
+  border-bottom: 2px solid #2d3945;
+  border-top: 7px solid #2d3945;
+  height: 15px;
+  width: calc(100% - 2em);
+  display: inline-block;
+
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+  header>*:not(h1),
+  main,
+  footer {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  header::after {
+    width: 700px;
+  }
+
+  .contact-fields label {
+    width: 200px;
+    padding-top: 20px;
+  }
+
+  .contact-fields {
+    display: flex;
+  }
+
+  #zip-code input {
+    width: 200px;
+  }
+}
