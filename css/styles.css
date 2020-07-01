@@ -221,7 +221,7 @@ header::after {
   Media Queries
 ==================================== */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   header>*:not(h1),
   main,
