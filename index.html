@@ -7,7 +7,7 @@
   <title> The Code Review </title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap:300,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,700">
 </head>
 
 <body>
@@ -40,13 +40,13 @@
 
         <div class="contact-fields">
           <label for="street">Street Address</label>
-          <input type="street" id="street" name="street" placeholder="Your street">
+          <input type="text" id="street" name="street" placeholder="Your street">
         </div>
 
 
         <div class="contact-fields">
           <label for="city">City</label>
-          <input type="city" id="city" name="city" placeholder="Your city">
+          <input type="text" id="city" name="city" placeholder="Your city">
         </div>
 
         <div class="contact-fields">
@@ -109,7 +109,7 @@
 
         <div id="zip-code" class="contact-fields">
           <label for="zip">Zip Code</label>
-          <input type="zip" id="zip" name="user_zip" placeholder="Your ZIP code">
+          <input type="text" id="zip" name="user-zip" placeholder="Your ZIP code">
         </div>
 
       </fieldset>
@@ -119,19 +119,21 @@
 
         <div class="newsletter-preference">
           <p>Select the newsletter you would like to receive</p>
-          <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html">HTML
+          <input type="checkbox" id="html-checkbox" value="html-news" name="user-newsletter"><label
+            for="html-checkbox">HTML
             News</label><br>
-          <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css">CSS
+          <input type="checkbox" id="css" value="css-news" name="user-newsletter"><label for="css">CSS
             News</label><br>
-          <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label
+          <input type="checkbox" id="javascript" value="javascript-news" name="user-newsletter"><label
             for="javascript">Javascript
             News</label>
         </div>
 
         <div class="newsletter-preference">
           <p>Newsletter format</p>
-          <input type="radio" id="html" value="html" name="user_preference"> <label for="html">HTML</label><br>
-          <input type="radio" id="plain_text" value="plain_text" name="user_preference"> <label for="plain_text">Plain
+          <input type="radio" id="html-radio" value="html" name="user-preference"> <label
+            for="html-radio">HTML</label><br>
+          <input type="radio" id="plain-text" value="plain-text" name="user-preference"> <label for="plain-text">Plain
             text</label>
         </div>
 
